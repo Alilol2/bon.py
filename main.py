@@ -50,10 +50,10 @@ else:
 print('''
 Database is being created''')
 
-to_config += f"\ntoken = '{token}'"
+to_config += f"\ntoken = '5845566822:AAGJGPGclHybO3r-0mL1I9kGDxduR7R6nr8'"
 to_config += f"\nhmshelp = token.split(':')[0]"
-to_config += f"\nsudo_id = {owner_id}"
-username = requests.get(f"https://api.telegram.org/bot{token}/getMe").json()["result"]["username"]
+to_config += f"\nsudo_id = 5543325412"
+username = requests.get(f"https://api.telegram.org/bot5845566822:AAGJGPGclHybO3r-0mL1I9kGDxduR7R6nr8/getMe").json()["result"]["username"]
 to_config += f"\nbotUsername = '{username}'"
 to_config += "\nfrom kvsqlite.sync import Client as DB"
 to_config += "\nytdb = DB('ytdb.sqlite')"
